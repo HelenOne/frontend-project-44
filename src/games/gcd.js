@@ -1,8 +1,7 @@
 import runGame from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
-
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const gcd = (a, b) => {
   while (b !== 0) {
