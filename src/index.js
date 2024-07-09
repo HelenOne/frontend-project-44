@@ -1,5 +1,5 @@
-import { roundsCount } from "./constants.js";
 import readlineSync from 'readline-sync';
+import { roundsCount } from './constants.js';
 
 export default (gameDescription, generateRound) => {
   console.log('Welcome to the Brain Games!');
