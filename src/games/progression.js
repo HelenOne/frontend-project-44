@@ -3,8 +3,11 @@ import { getRandomNumber } from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const generateProgression = (start, step, length) =>
-  Array.from({ length }, (_, i) => start + i * step);
+const generateProgression = (start, step, length) => {
+  const range = { length };
+  const fillValue = (_, i) => start + i * step;
+  return Array.from(range, fillValue);
+};
 
 const playRound = () => {
   const progressionLength = getRandomNumber(5, 10);
